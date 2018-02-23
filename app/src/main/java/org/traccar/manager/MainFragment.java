@@ -67,8 +67,9 @@ public class MainFragment extends WebViewFragment {
         webSettings.setDatabaseEnabled(true);
         webSettings.setMediaPlaybackRequiresUserGesture(false);
 
-        String url = PreferenceManager.getDefaultSharedPreferences(
-                getActivity()).getString(MainActivity.PREFERENCE_URL, null);
+        /*String url = PreferenceManager.getDefaultSharedPreferences(
+                getActivity()).getString(MainActivity.PREFERENCE_URL, null);*/
+        String url = "http://10.10.30.101:8082";
 
         getWebView().loadUrl(url);
     }

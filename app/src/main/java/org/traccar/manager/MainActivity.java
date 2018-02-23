@@ -32,12 +32,15 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    private void initContent() {
+    /*private void initContent() {
         if (PreferenceManager.getDefaultSharedPreferences(this).contains(PREFERENCE_URL)) {
             getFragmentManager().beginTransaction().add(android.R.id.content, new MainFragment()).commit();
         } else {
             getFragmentManager().beginTransaction().add(android.R.id.content, new StartFragment()).commit();
         }
+    }*/
+    private void initContent() {
+        getFragmentManager().beginTransaction().add(android.R.id.content, new MainFragment()).commit();
     }
 
 }
